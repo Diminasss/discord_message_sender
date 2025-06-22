@@ -30,7 +30,7 @@ Discord Message Sender/
 ├── .gitignore # Исключения для Git
 ├── LICENSE # Лицензия
 ├── main.py # Исходный код автокликера
-├── READMME.md # Этот файл
+├── README.md # Этот файл
 └── requirements.txt # Зависимости для запуска из Python
 ```
 
