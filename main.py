@@ -2,6 +2,7 @@ import datetime
 import pygetwindow as gw
 import pyautogui as ag
 import time
+
 """
 
 ░██╗░░░░░░░██╗░█████╗░██████╗░███╗░░██╗██╗███╗░░██╗░██████╗░██╗
@@ -17,12 +18,8 @@ import time
 """
 
 
-window = gw.getWindowsWithTitle('Discord')[0]
-
-result_time: str = ("11:51")
-
-
 def push_message():
+    window = gw.getWindowsWithTitle('Discord')[0]
     window.activate()
     time.sleep(0.5)
     ag.press("enter")
@@ -31,6 +28,7 @@ def push_message():
 print("Программа работает")
 
 if __name__ == "__main__":
+    result_time: str = str(input("Введите время, например, 11:51: "))
     while True:
         if datetime.datetime.now().strftime("%H:%M") == result_time:
             push_message()
